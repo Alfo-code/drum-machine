@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+:root {
+  --primaryGray: gray;
+  --secondaryGray: #b3b3b3;
+  --mainOrange: orange;
+  --mainBlack: rgb(52, 52, 52);
+  --btnColor: #f2efef;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primaryGray);
+}
+
+#drum-machine {
+  outline: 5px solid var(--mainOrange);
+  width: 660px;
+  text-align: center;
+  background-color: var(--secondaryGray);
+  position: relative;
+}
+
+.keyboard-wrapper {
+  width: 332px;
+  height: 272px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.drum-pad {
+  background-color: var(--primaryGray);
+  margin: 10px 10px 0 0;
+  box-shadow: var(--mainBlack) 3px 3px 5px;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  float: left;
+  border-radius: 5px;
+  padding-top: 35px;
+}
+
+.drum-pad:active {
+  background-color: var(--mainOrange);
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+
+.controls-container {
+  float: right;
+  width: 150px;
+  margin-top: 20%;
+  margin-right: 10%;
+  background-color: var(--primaryGray);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.power-btn {
+  position: absolute;
+  top: 25%;
+  right: 17%;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background-color: var(--mainBlack);
+  color: var(--btnColor);
+  border-radius: 7px;
+}

@@ -12,4 +12,4 @@ Solo projects are meant to challenge the skills you've learnt so far through the
 
 ## Live URL
 
-- Check this project [online]()
+- Check this project [online](https://drum-machine-alfo-code.netlify.app/)
